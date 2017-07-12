@@ -60,7 +60,7 @@ public class LocationDescriptionActivity extends AppCompatActivity {
             phone = location.getString("phone");
             txtPhone.setText(phone);
 
-            Button backButton = (Button) findViewById(R.id.back_button);
+            Button backButton = (Button) findViewById(R.id.category_button);
 
             backButton.setOnClickListener(new View.OnClickListener() {
                 @Override
