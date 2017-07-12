@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#A14628</color>
+    <color name="colorPrimary">#202B35</color>
+    <color name="colorAccent">#FFF</color>
+    <!-- Background color for the numbers mCategory -->
+    <color name="category_sights">#FD8E09</color>
+
+    <!-- Background color for the family members mCategory -->
+    <color name="category_castels">#379237</color>
+
+    <!-- Background color for the colors mCategory -->
+    <color name="category_bars">#8800A0</color>
+
+    <!-- Background color for the phrases mCategory -->
+    <color name="category_restaurants">#16AFCA</color>
+</resources>

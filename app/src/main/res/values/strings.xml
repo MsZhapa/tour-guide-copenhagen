@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tour Guide Copenhagen</string>
+
+    <string name="explore_button">Start exploring</string>
+    <string name="back_button">Back to categories</string>
+
+    //tab names
+
+    <string name="sights">Sights</string>
+    <string name="castels">Castels</string>
+    <string name="bars">Bars</string>
+    <string name="restaurants">Restaurants</string>
+
+</resources>

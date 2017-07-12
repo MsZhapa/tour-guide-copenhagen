@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content"
+    tools:context=".LocationDescriptionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:scaleType="fitXY"
+        android:id="@+id/location_image_extended"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@id/location_image_extended"
+        android:id="@+id/location_name_extended"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/location_description_extended"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/location_name_extended"
+        android:layout_alignLeft="@+id/hours_icon"
+        android:layout_alignStart="@+id/hours_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_description_extended"
+            android:layout_margin="10dp"
+            android:src="@drawable/hours"
+            android:id="@+id/hours_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="10dp"
+            android:id="@+id/location_hours"
+            android:layout_alignBottom="@+id/hours_icon"
+            android:layout_toRightOf="@+id/hours_icon"
+            android:layout_toEndOf="@+id/hours_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/address"
+            android:layout_margin="10dp"
+            android:layout_below="@id/hours_icon"
+            android:id="@+id/address_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="10dp"
+            android:id="@+id/location_address"
+            android:layout_alignBottom="@+id/address_icon"
+            android:layout_toRightOf="@+id/address_icon"
+            android:layout_toEndOf="@+id/address_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/address_icon"
+            android:src="@drawable/web"
+            android:id="@+id/website_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="10dp"
+            android:id="@+id/location_website"
+            android:layout_alignBottom="@+id/website_icon"
+            android:layout_toRightOf="@+id/website_icon"
+            android:layout_toEndOf="@+id/website_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/website_icon"
+            android:layout_margin="10dp"
+            android:src="@drawable/phone"
+            android:id="@+id/phone_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_phone"
+            android:layout_alignBottom="@+id/phone_icon"
+            android:layout_toRightOf="@+id/phone_icon"
+            android:layout_toEndOf="@+id/phone_icon" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_below="@id/location_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/back_button"
+            android:padding="13dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape"
+            android:drawableTint="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:drawablePadding="10dp" />
+
+    </RelativeLayout>
+    </ScrollView>

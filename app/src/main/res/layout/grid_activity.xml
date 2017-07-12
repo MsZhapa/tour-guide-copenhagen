@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GridActivity" >
+
+    <GridView
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:numColumns="2"
+        android:columnWidth="120dp"
+        android:gravity="center_vertical"
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid" />
+
+</LinearLayout>
