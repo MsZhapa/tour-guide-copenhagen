@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 
-
-
 /**
  * Created by MsZhapa on 25/06/2017.
  */

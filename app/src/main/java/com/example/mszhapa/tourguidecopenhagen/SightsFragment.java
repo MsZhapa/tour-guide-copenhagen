@@ -38,19 +38,18 @@ public class SightsFragment extends Fragment {
 
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Nyhavn", "Especially during summer Nyhavn is the perfect place to end a long day. Have dinner at one of the cosy restaurants or do like the locals and buy a beer from a nearby store and enjoy the view.", "Daily between 10 until 22, and even later in the summertime weekends.", "Nyhavn 1-71, 1051 København K", "www.nyhavn.com", "+45 3312 3233", R.drawable.nyhavn));
-        locations.add(new Location("Tivoli Gardens", "Tivoli Gardens amusement park in Copenhagen is a must for all visitors to the city, young and old.","Daily between 10-23","Vesterbrogade 3, 1630 København V","www.tivoligardens.com","+45 3315 1001",R.drawable.tivoli));
-        locations.add(new Location("Little Mermaid", "At Langelinje Pier you will find one of Copenhagen's most famous tourist attractions: The sculpture of The Little Mermaid.","Daily between 10, until sunset.","Langelinie, 2100 København Ø","www.mermaidsculpture.dk","+45 24279602 (contact if you want to buy one)", R.drawable.mermaid));
-        locations.add(new Location("Christiania", "Ready for something different? Then head out to freetown Christiania in the district of Christianshavn.","Daily between 10 until 22, and even later in the summertime.","Prinsessegade, 1422 København K", "nytforum@christiania.org","+45 3295 6507" ,R.drawable.christiania));
-        locations.add(new Location("Strøget", "Copenhagen's largest shopping area is centered around Strøget in the heart of the city. Strøget is one of Europe's longest pedestrian streets with a wealth of shops.", "All days 10 - 19, and 23 for restaurants" ,"Frederiksberggade, 1459 København K", "www.kcc.dk","No contact for this location.", R.drawable.stroget));
-
+        locations.add(new Location(getString(R.string.location_name_first_sight), getString(R.string.description_first_sight), getString(R.string.hours_first_sight), getString(R.string.address_first_sight), getString(R.string.website_first_sight), getString(R.string.phone_first_sight), R.drawable.nyhavn));
+        locations.add(new Location(getString(R.string.location_name_second_sight), getString(R.string.description_second_sight), getString(R.string.hours_second_sight), getString(R.string.address_second_sight), getString(R.string.website_second_sight), getString(R.string.phone_second_sight), R.drawable.tivoli));
+        locations.add(new Location(getString(R.string.location_name_third_sight), getString(R.string.description_third_sight), getString(R.string.hours_third_sight), getString(R.string.address_third_sight), getString(R.string.website_third_sight), getString(R.string.phone_third_sight), R.drawable.mermaid));
+        locations.add(new Location(getString(R.string.location_name_forth_sight), getString(R.string.description_forth_sight), getString(R.string.hours_forth_sight), getString(R.string.address_forth_sight), getString(R.string.website_forth_sight), getString(R.string.phone_forth_sight), R.drawable.christiania));
+        locations.add(new Location(getString(R.string.location_name_fifth_sight), getString(R.string.description_fifth_sight), getString(R.string.hours_fifth_sight), getString(R.string.address_fifth_sight), getString(R.string.website_fifth_sight), getString(R.string.phone_fifth_sight), R.drawable.stroget));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.colorPrimary);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // location_list.xml layout file.
-       final ListView listView = (ListView) rootView.findViewById(R.id.list);
+        final ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link LocationAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Location} in the list.
@@ -60,7 +59,7 @@ public class SightsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-       Location location = locations.get(position);
+                Location location = locations.get(position);
 
                 // Sending location object to LocationDescriptionActivity
                 Intent i = new Intent(view.getContext(), LocationDescriptionActivity.class);
@@ -80,6 +79,7 @@ public class SightsFragment extends Fragment {
 
         return rootView;
     }
+
     @Override
     public void onStop() {
         super.onStop();

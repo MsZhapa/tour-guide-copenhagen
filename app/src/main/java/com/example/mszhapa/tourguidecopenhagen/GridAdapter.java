@@ -16,10 +16,10 @@ import android.widget.TextView;
 public class GridAdapter extends BaseAdapter{
 
     private Context mContext;
-    private final String[] mCategory;
+    private final int[] mCategory;
     private final int[] mImageId;
 
-    public GridAdapter(Context c, String[] mCategory, int[] mImageId) {
+    public GridAdapter(Context c, int[] mCategory, int[] mImageId) {
         mContext = c;
         this.mImageId = mImageId;
         this.mCategory = mCategory;

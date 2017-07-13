@@ -11,13 +11,19 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class OptionsAdapter extends FragmentPagerAdapter {
 
-    Context mContext;
+    private Context mContext;
 
-    private String tabTitles[] = new String[] { "Sights", "Castels", "Bars", "Restaurants" };
+    private String tabTitles[] = new String[4];
 
     public OptionsAdapter(Context context, FragmentManager fm) {
+
         super(fm);
         mContext = context;
+        tabTitles[0]=mContext.getString(R.string.sights);
+        tabTitles[1]=mContext.getString(R.string.castels);
+        tabTitles[2]=mContext.getString(R.string.bars);
+        tabTitles[3]=mContext.getString(R.string.restaurants);
+
     }
 
     @Override
@@ -41,6 +47,7 @@ public class OptionsAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        return tabTitles[position];
+       return tabTitles[position];
+
     }
 }

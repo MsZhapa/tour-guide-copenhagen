@@ -14,17 +14,22 @@ import android.widget.GridView;
 public class GridActivity extends Activity {
 
     GridView grid;
-    String[] category = {
-            "Sights to see",
-            "Castels",
-            "Bars",
-            "Restaurants"};
+
+    int[] category = {
+            R.string.sights,
+            R.string.castels,
+            R.string.bars,
+            R.string.restaurants
+
+    };
+
     int[] imageId = {
             R.drawable.sights,
             R.drawable.castels,
             R.drawable.bars,
             R.drawable.restaurants,
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

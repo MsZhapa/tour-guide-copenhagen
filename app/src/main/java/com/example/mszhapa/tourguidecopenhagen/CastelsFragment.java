@@ -24,6 +24,7 @@ public class CastelsFragment extends Fragment {
     public CastelsFragment() {
         // Required empty public constructor
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,12 +39,11 @@ public class CastelsFragment extends Fragment {
 
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Christiansborg Palace", "Christiansborg Palace, located on the tiny island of Slotsholmen, contains the Danish Parliament Folketinget, the Supreme Court, and the Ministry of State.", "Monday-Sunday from 10-17.", "Prins Jørgens Gård, 1468 København K", "www.kongeligeslotte.dk", "+45 3392 6492", R.drawable.christiansborg));
-        locations.add(new Location("Kronborg Castle", "Kronborg Castle is probably the most famous Danish castle, known worldwide from Shakespeare's Hamlet.","Tuesday-Sunday, from 11-17.","Kronborg 2C, 3000 Helsingør","www.kongeligeslotte.dk","+45 4921 3078",R.drawable.kronborg));
-        locations.add(new Location("Amalienborg Palace", "Amalienborg Palace is a must for anyone with a taste for royal history and the life of Denmark’s royal family who still resides inside the palace.","Monday-Sunday from 10-17.","Amalienborg, 1257 København K","www.kongernessamling.dk","+45 3312 2186",R.drawable.amalienborg));
-        locations.add(new Location("Rosenborg Castle", "A royal hermitage set in the King’s Garden in the heart of Copenhagen, Rosenborg Castle features 400 years of splendor, royal art treasures and the Crown Jewels and Royal Regalia.","Monday-Sunday from 10-17.","Øster Voldgade 4A, 1350 København K","www.kongernessamling.dk/rosenborg/","+45 3315 3286", R.drawable.rosenborg));
-        locations.add(new Location("Frederiksborg Castle", "Frederiksborg Palace is situated on three islets in the castle lake in Hillerød, north of Copenhagen.","Monday-Sunday from 10-17.","Møntportvejen 10, 3400 Hillerød","www.frederiksborgslot.dk","+45 4826 0439", R.drawable.frederiksborg));
-
+        locations.add(new Location(getString(R.string.location_name_first_castel), getString(R.string.description_first_castel), getString(R.string.hours_first_castel), getString(R.string.address_first_castel), getString(R.string.website_first_castel), getString(R.string.phone_first_castel), R.drawable.christiansborg));
+        locations.add(new Location(getString(R.string.location_name_second_castel), getString(R.string.description_second_castel), getString(R.string.hours_second_castel), getString(R.string.address_second_castel), getString(R.string.website_second_castel), getString(R.string.phone_second_castel), R.drawable.kronborg));
+        locations.add(new Location(getString(R.string.location_name_third_castel), getString(R.string.description_third_castel), getString(R.string.hours_third_castel), getString(R.string.address_third_castel), getString(R.string.website_third_castel), getString(R.string.phone_third_castel), R.drawable.amalienborg));
+        locations.add(new Location(getString(R.string.location_name_forth_castel), getString(R.string.description_forth_castel), getString(R.string.hours_forth_castel), getString(R.string.address_forth_castel), getString(R.string.website_forth_castel), getString(R.string.phone_forth_castel), R.drawable.rosenborg));
+        locations.add(new Location(getString(R.string.location_name_fifth_castel), getString(R.string.description_fifth_castel), getString(R.string.hours_fifth_castel), getString(R.string.address_fifth_castel), getString(R.string.website_fifth_castel), getString(R.string.phone_fifth_castel), R.drawable.frederiksborg));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.colorPrimary);
 
@@ -80,6 +80,7 @@ public class CastelsFragment extends Fragment {
 
         return rootView;
     }
+
     @Override
     public void onStop() {
         super.onStop();

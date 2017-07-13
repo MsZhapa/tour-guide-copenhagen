@@ -20,6 +20,7 @@ public class BarsFragment extends Fragment {
     public BarsFragment() {
         // Required empty public constructor
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +35,11 @@ public class BarsFragment extends Fragment {
         //the array of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Jazzhus Montmartre", "Legendary venue for live jazz with a program of gigs by famous American & European musicians.", "Tuesday – Thursday 17.30-24.00\n" + "Friday – Saturday 17.30-02.00", "Store Regnegade 19A, 1110 København K", "montmartre@bojesen.dk", "+45 27 90 30 63", R.drawable.jazzhus));
-        locations.add(new Location("Blume", "High level innovative cocktails and extraordinary service, combined with intimate sorroundings and a distinct music profile will ensure the remarkable party.", "Fri – Sun, 20.00 – 05.00","Studiestræde 14,1455 Købehavn K", "wwww.blumecph.dk","+45 60 61 71 58",R.drawable.blume));
-        locations.add(new Location("Bar7", "Stylish bar for drinks & cocktails in a choice of rooms with comfy designer sofas & funky decor.","All days between 16-4. Closed on Monday." ,"Studiestræde 7, 1455 København K" , "www.bar7.dk","+45 27 77 77 87",R.drawable.bar7));
-        locations.add(new Location("Ruby", "Classic & creative modern cocktails in a cool hangout with comfy sofas & an intimate ambience.","Every day, 16-2.","Nybrogade 10, 1203 København K","www.rby.dk","+45 33 93 12 03", R.drawable.ruby));
-        locations.add(new Location("Mexibar", "The bar has existed for many years and is known for its festive atmosphere and cheap cocktails.","Monday-Saturday , from 19-3.", "Elmegade 27, 2200 København N","www.mexibar.com","+45 35 37 77 66", R.drawable.mexibar));
+        locations.add(new Location(getString(R.string.location_name_first_bar), getString(R.string.description_first_bar), getString(R.string.hours_first_bar), getString(R.string.address_first_bar), getString(R.string.website_first_bar), getString(R.string.phone_first_bar), R.drawable.jazzhus));
+        locations.add(new Location(getString(R.string.location_name_second_bar), getString(R.string.description_second_bar), getString(R.string.hours_second_bar), getString(R.string.address_second_bar), getString(R.string.website_second_bar), getString(R.string.phone_second_bar), R.drawable.blume));
+        locations.add(new Location(getString(R.string.location_name_third_bar), getString(R.string.description_third_bar), getString(R.string.hours_third_bar), getString(R.string.address_third_bar), getString(R.string.website_third_bar), getString(R.string.phone_third_bar), R.drawable.bar7));
+        locations.add(new Location(getString(R.string.location_name_forth_bar), getString(R.string.description_forth_bar), getString(R.string.hours_forth_bar), getString(R.string.address_forth_bar), getString(R.string.website_forth_bar), getString(R.string.phone_forth_bar), R.drawable.ruby));
+        locations.add(new Location(getString(R.string.location_name_fifth_bar), getString(R.string.description_fifth_bar), getString(R.string.hours_fifth_bar), getString(R.string.address_fifth_bar), getString(R.string.website_fifth_bar), getString(R.string.phone_fifth_bar), R.drawable.mexibar));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.colorPrimary);
 
@@ -76,6 +77,7 @@ public class BarsFragment extends Fragment {
 
         return rootView;
     }
+
     @Override
     public void onStop() {
         super.onStop();

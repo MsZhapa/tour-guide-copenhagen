@@ -1,14 +1,174 @@
 <resources>
     <string name="app_name">Tour Guide Copenhagen</string>
 
+    //button names
     <string name="explore_button">Start exploring</string>
     <string name="category_button">See categories</string>
 
     //tab names
-
     <string name="sights">Sights</string>
     <string name="castels">Castels</string>
     <string name="bars">Bars</string>
     <string name="restaurants">Restaurants</string>
+
+    //sights list strings 1st sight
+    <string name="location_name_first_sight">Nyhavn</string>
+    <string name="description_first_sight">Especially during summer Nyhavn is the perfect place to end a long day. Have dinner at one of the cosy restaurants or do like the locals and buy a beer from a nearby store and enjoy the view.</string>
+    <string name="hours_first_sight">Daily between 10 until 22, and even later in the summertime weekends.</string>
+    <string name="address_first_sight">Nyhavn 1 to 71, 1051 København K</string>
+    <string name="website_first_sight">www.nyhavn.com</string>
+    <string name="phone_first_sight">+45 33 12 32 33</string>
+
+    //sights list strings 2nd sight
+    <string name="location_name_second_sight">Tivoli Gardens</string>
+    <string name="description_second_sight">Tivoli Gardens amusement park in Copenhagen is a must for all visitors to the city, young and old.</string>
+    <string name="hours_second_sight">Daily between 10 until 23</string>
+    <string name="address_second_sight">Vesterbrogade 3, 1630 København V</string>
+    <string name="website_second_sight">www.tivoligardens.com</string>
+    <string name="phone_second_sight">+45 33 15 10 01</string>
+
+    //sights list strings 3rd sight
+    <string name="location_name_third_sight">Little Mermaid</string>
+    <string name="description_third_sight">At Langelinje Pier you will find one of Copenhagen\'s most famous tourist attractions: The sculpture of The Little Mermaid.</string>
+    <string name="hours_third_sight">Daily between 10, until sunset.</string>
+    <string name="address_third_sight">RLangelinie, 2100 København Ø</string>
+    <string name="website_third_sight">www.mermaidsculpture.dk</string>
+    <string name="phone_third_sight">+45 24 27 96 02 (contact if you want to buy one)</string>
+
+    //sights list strings 4th sight
+    <string name="location_name_forth_sight">Christiania</string>
+    <string name="description_forth_sight">Ready for something different? Then head out to freetown Christiania in the district of Christianshavn.</string>
+    <string name="hours_forth_sight">Daily between 10 until 22, and even later in the summertime.</string>
+    <string name="address_forth_sight">Prinsessegade, 1422 København K</string>
+    <string name="website_forth_sight">nytforum@christiania.org</string>
+    <string name="phone_forth_sight">+45 3295 6507</string>
+
+    //sights list strings 5th sight
+    <string name="location_name_fifth_sight">Strøget</string>
+    <string name="description_fifth_sight">The largest shopping area is centered around Strøget in the heart of the city. Strøget is one of Europe\'\s longest pedestrian streets with a wealth of shops.</string>
+    <string name="hours_fifth_sight">All days between 10 and 19, and 23 for restaurants</string>
+    <string name="address_fifth_sight">Frederiksberggade, 1459 København K</string>
+    <string name="website_fifth_sight">www.kcc.dk</string>
+    <string name="phone_fifth_sight">No contact for this location.</string>
+
+    //castels list strings -1st castel
+    <string name="location_name_first_castel">Christiansborg Palace</string>
+    <string name="description_first_castel">Christiansborg Palace, located on the tiny island of Slotsholmen, contains the Danish Parliament Folketinget, the Supreme Court, and the Ministry of State.</string>
+    <string name="hours_first_castel">Monday-Sunday from 10 to 17.</string>
+    <string name="address_first_castel">Prins Jørgens Gård, 1468 København K</string>
+    <string name="website_first_castel">www.kongeligeslotte.dk</string>
+    <string name="phone_first_castel">+45 33 92 64 92</string>
+
+    //castels list strings -2nd castel
+    <string name="location_name_second_castel">Kronborg Castle</string>
+    <string name="description_second_castel">Kronborg Castle is probably the most famous Danish castle, known worldwide from Shakespeare\'s Hamlet.</string>
+    <string name="hours_second_castel">Tuesday to Sunday, from 11 to 17.</string>
+    <string name="address_second_castel">Kronborg 2C, 3000 Helsingør</string>
+    <string name="website_second_castel">www.kongeligeslotte.dk</string>
+    <string name="phone_second_castel">+45 49 21 30 78</string>
+
+    //castels list strings -3rd castel
+    <string name="location_name_third_castel">Amalienborg Palace</string>
+    <string name="description_third_castel">Amalienborg Palace is a must for anyone with a taste for royal history and the life of Denmark’s royal family who still resides inside the palace.</string>
+    <string name="hours_third_castel">Monday to Sunday from 10 to 17.</string>
+    <string name="address_third_castel">Amalienborg, 1257 København K</string>
+    <string name="website_third_castel">www.kongernessamling.dk</string>
+    <string name="phone_third_castel">+45 33 12 21 86</string>
+
+    //castels list strings 4th castel
+    <string name="location_name_forth_castel">Rosenborg Castle</string>
+    <string name="description_forth_castel">A royal hermitage set in the King’s Garden in the heart of Copenhagen, Rosenborg Castle features 400 years of splendor, royal art treasures and the Crown Jewels and Royal Regalia.</string>
+    <string name="hours_forth_castel">Monday to Sunday from 10 to 17.</string>
+    <string name="address_forth_castel">Øster Voldgade 4A, 1350 København K</string>
+    <string name="website_forth_castel">www.kongernessamling.dk/rosenborg</string>
+    <string name="phone_forth_castel">+45 33 15 32 86</string>
+
+    //castels list strings -5th castel
+    <string name="location_name_fifth_castel">Frederiksborg Castle</string>
+    <string name="description_fifth_castel">Frederiksborg Palace is situated on three islets in the castle lake in Hillerød, north of Copenhagen.</string>
+    <string name="hours_fifth_castel">Monday to Sunday from 10 to 17.</string>
+    <string name="address_fifth_castel">Møntportvejen 10, 3400 Hillerød</string>
+    <string name="website_fifth_castel">www.frederiksborgslot.dk</string>
+    <string name="phone_fifth_castel">+45 48 26 04 39</string>
+
+    //bars list strings -1st bar
+    <string name="location_name_first_bar">Jazzhus Montmartre</string>
+    <string name="description_first_bar">Legendary venue for live jazz with a program of gigs by famous American and European musicians.</string>
+    <string name="hours_first_bar">In the weekends between 17.30 to 02, and 24 Tuesday/Thursday. </string>
+    <string name="address_first_bar">Store Regnegade 19A, 1110 København K</string>
+    <string name="website_first_bar">montmartre@bojesen.dk</string>
+    <string name="phone_first_bar">+45 27 90 30 63</string>
+
+    //bars list strings 2nd bar
+    <string name="location_name_second_bar">Blume</string>
+    <string name="description_second_bar">High level innovative cocktails and extraordinary service, combined with intimate sorroundings and a distinct music profile will ensure the remarkable party.</string>
+    <string name="hours_second_bar">Friday til Sunday, from 20 until 5.</string>
+    <string name="address_second_bar">Studiestræde 14,1455 Købehavn Ks</string>
+    <string name="website_second_bar">wwww.blumecph.dk</string>
+    <string name="phone_second_bar">+45 60 61 71 58</string>
+
+    //bars list strings 3rd bar
+    <string name="location_name_third_bar">Bar7</string>
+    <string name="description_third_bar">Stylish bar for drinks and cocktails in a choice of rooms with comfy designer sofas and funky decor.</string>
+    <string name="hours_third_bar">All days between 16 and 4. Closed on Monday.</string>
+    <string name="address_third_bar">Studiestræde 7, 1455 København K</string>
+    <string name="website_third_bar">www.bar7.dk</string>
+    <string name="phone_third_bar">+45 27 77 77 87</string>
+
+    //sights list strings 4th bar
+    <string name="location_name_forth_bar">Ruby</string>
+    <string name="description_forth_bar">Classic and creative modern cocktails in a cool hangout with comfy sofas and an intimate ambience.</string>
+    <string name="hours_forth_bar">Every day, from 16 until 2.</string>
+    <string name="address_forth_bar">Nybrogade 10, 1203 København K</string>
+    <string name="website_forth_bar">www.rby.dk</string>
+    <string name="phone_forth_bar">+45 33 93 12 03</string>
+
+    //sights list strings 5th bar
+    <string name="location_name_fifth_bar">Mexibar</string>
+    <string name="description_fifth_bar">The bar has existed for many years and is known for its festive atmosphere and cheap cocktails.</string>
+    <string name="hours_fifth_bar">Monday to Saturday , from 19 until 3.</string>
+    <string name="address_fifth_bar">Elmegade 27, 2200 København N</string>
+    <string name="website_fifth_bar">www.mexibar.com</string>
+    <string name="phone_fifth_bar">+45 35 37 77 66</string>
+
+    //restaurants list - 1st restaurant
+    <string name="location_name_first_restaurant">Cock\'s and cows</string>
+    <string name="description_first_restaurant">At Cock\'s and Cows there is a burger for everyone. There is everything from the traditional cheeseburger to a big burger with pork called The Bohemian Pork Rib.</string>
+    <string name="hours_first_restaurant">Everyday between 11 until 22. Longer hours during weekends.</string>
+    <string name="address_first_restaurant">Gammel Strand 34, 1202 København K</string>
+    <string name="website_first_restaurant">www.cocksandcows.dk</string>
+    <string name="phone_first_restaurant">+45 69 69 60 00</string>
+
+    //restaurant list strings 2nd restaurant
+    <string name="location_name_second_restaurant">The Union Kitchen</string>
+    <string name="description_second_restaurant">The Union Kitchen is located in Store Strandstræde street near Nyhavn in Copenhagen. Here you will be served breakfast, English \"balls\" and tasteful cocktails in classic surroundings.</string>
+    <string name="hours_second_restaurant">All days from 8 until 17, and midnight in weekends.</string>
+    <string name="address_second_restaurant">Store Strandstrade 21, 1255 København K</string>
+    <string name="website_second_restaurant">www.theunionkitchen.dk</string>
+    <string name="phone_second_restaurant">+45 33 14 54 88</string>
+
+    //restaurant list strings 3rd restaurant
+    <string name="location_name_third_restaurant">Nova</string>
+    <string name="description_third_restaurant">Located in central Copenhagen just off Stroget, Nova is an ideal place for a break on a shoppedag or for a cozy dinner with friends and family.</string>
+    <string name="hours_third_restaurant">Everyday from 11 until midnight.</string>
+    <string name="address_third_restaurant">Skindergade 34, 1159 København K</string>
+    <string name="website_third_restaurant">www.restaurantnova.com</string>
+    <string name="phone_third_restaurant">+45 33 11 12 49</string>
+
+    //restaurant list strings 4th restaurant
+    <string name="location_name_forth_restaurant">Nimb Bar\'n\'Grill</string>
+    <string name="description_forth_restaurant">Nimb Bar\'n\'Grill Tivoli serves seafood and steakhouse classics with a creative culinary edge.In the middle of Tivoli Gardens you will find Nimb Bar\'n\'Grill, which, as the name reveals, offers both great steaks as well as alcohol.</string>
+    <string name="hours_forth_restaurant">Monday to Saturday, from 17 to 23.</string>
+    <string name="address_forth_restaurant">Bernstorffsgade 5,1577 København V</string>
+    <string name="website_forth_restaurant">www.bargrill.nimb.dk</string>
+    <string name="phone_forth_restaurant">+45 88 70 00 60</string>
+
+    //restaurant list strings 5th restaurant
+    <string name="location_name_fifth_restaurant">Restaurant Kanalen</string>
+    <string name="description_fifth_restaurant">Beautiful, idyllic and with the serenity of old Copenhagen lies Restaurant Kanalen in the house that used to serve as customs office for the area of Christianshavn.</string>
+    <string name="hours_fifth_restaurant">Monday to Saturday, from 11.30 to 23.30.</string>
+    <string name="address_fifth_restaurant">Wilders Plads 2, 1403 København K</string>
+    <string name="website_fifth_restaurant">www.restaurant-kanalen.dk</string>
+    <string name="phone_fifth_restaurant">+45 32 95 13 30</string>
 
 </resources>

@@ -1,7 +1,5 @@
 package com.example.mszhapa.tourguidecopenhagen;
 
-import java.util.ArrayList;
-
 /**
  * Created by MsZhapa on 26/06/2017. Custom class for Location object with getters and public constructor
  */
@@ -16,9 +14,9 @@ public class Location {
     private String mLocationPhone;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
-    public static ArrayList<Location> locations = new ArrayList<Location>();
 
-    public Location(String locationName, String locationDescription, String locationHours, String locationAddress, String locationWebsite, String locationPhone, int imageResourceId ) {
+    public Location(String locationName, String locationDescription, String locationHours, String locationAddress, String locationWebsite, String locationPhone, int imageResourceId) {
+
         mLocationName = locationName;
         mLocationDescription = locationDescription;
         mImageResourceId = imageResourceId;
@@ -53,6 +51,7 @@ public class Location {
         return mLocationWebsite;
     }
 
+
     public String getLocationPhone() {
         return mLocationPhone;
     }
@@ -61,6 +60,7 @@ public class Location {
     public int getImageResourceId() {
         return mImageResourceId;
     }
+
 
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
