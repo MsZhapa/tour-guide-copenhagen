@@ -14,13 +14,13 @@ import android.widget.TextView;
 
 public class LocationDescriptionActivity extends AppCompatActivity {
 
-    String name;
-    String description;
-    String hours;
-    String address;
-    String website;
-    String phone;
-    int image;
+    private String name;
+    private String description;
+    private String hours;
+    private String address;
+    private String website;
+    private String phone;
+    private int image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
